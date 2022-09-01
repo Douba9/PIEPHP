@@ -8,8 +8,12 @@ class UserController extends \Core\Controller {
         $userModel->Connect();
     }
 
-    public static function add(){
-        echo "add()<br>";
+    function add () {
+        $this->render('register');
+    }
+
+    public static function index(){
+        echo "User => Index()";
     }
 
 }

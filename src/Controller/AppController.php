@@ -1,9 +1,11 @@
 <?php
-require_once("/Core/Controller.php");
+//require_once("/Core/Controller.php");
 
-class AppController extends \Core\Controller {
+use Core\Controller;
 
-    public static function indexAction(){
+class AppController extends Core\Controller {
+
+    public static function index(){
         echo "indexAction()<br>";
     }
 
